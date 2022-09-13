@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace VideoSharingPlatform.Shared.Dtos
 {
+    // to return no content as generic
     public class NoContent
     {
     }
