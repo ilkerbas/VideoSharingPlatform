@@ -3,9 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{91F955DE-8EEC-408A-8957-8EAAE580E268}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feed", "Feed", "{29A61DCB-A562-471A-A000-49EA2E02B8DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoSharingPlatform.Services.Feed.API", "Services\Feed\VideoSharingPlatform.Services.Feed.API\VideoSharingPlatform.Services.Feed.API.csproj", "{90091CA1-A583-4D85-B0FF-2FF91E167EAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3614F00-583D-4A43-92EF-A806EEB68C81}"
+	ProjectSection(SolutionItems) = preProject
+		Ports.txt = Ports.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{F1B1AD46-436B-419B-90D7-B7B66E61F552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoSharingPlatform.Shared", "Shared\VideoSharingPlatform.Shared\VideoSharingPlatform.Shared.csproj", "{3B9BA140-1700-4043-BF53-DBCD00820FBA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90091CA1-A583-4D85-B0FF-2FF91E167EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90091CA1-A583-4D85-B0FF-2FF91E167EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90091CA1-A583-4D85-B0FF-2FF91E167EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90091CA1-A583-4D85-B0FF-2FF91E167EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9BA140-1700-4043-BF53-DBCD00820FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9BA140-1700-4043-BF53-DBCD00820FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9BA140-1700-4043-BF53-DBCD00820FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9BA140-1700-4043-BF53-DBCD00820FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29A61DCB-A562-471A-A000-49EA2E02B8DC} = {91F955DE-8EEC-408A-8957-8EAAE580E268}
+		{90091CA1-A583-4D85-B0FF-2FF91E167EAC} = {29A61DCB-A562-471A-A000-49EA2E02B8DC}
+		{3B9BA140-1700-4043-BF53-DBCD00820FBA} = {F1B1AD46-436B-419B-90D7-B7B66E61F552}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FBA4E40-3BDD-426A-877B-BF3792807648}
