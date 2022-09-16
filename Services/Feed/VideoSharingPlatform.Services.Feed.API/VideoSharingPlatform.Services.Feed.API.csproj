@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\..\..\Shared\VideoSharingPlatform.Shared\VideoSharingPlatform.Shared.csproj" />
   </ItemGroup>
 
 </Project>

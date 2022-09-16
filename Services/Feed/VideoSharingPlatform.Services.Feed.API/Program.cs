@@ -1,11 +1,14 @@
 using Microsoft.Extensions.Options;
 using System.Reflection;
+using VideoSharingPlatform.Services.Feed.API.Services;
 using VideoSharingPlatform.Services.Feed.API.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IVideoService, VideoService>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddControllers();
